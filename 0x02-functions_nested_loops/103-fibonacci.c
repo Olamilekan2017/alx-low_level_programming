@@ -2,21 +2,22 @@
 
 /**
  * main - the main printing function
+ * less than 4000000
  * Return: 0
  */
 
 int main(void)
 {
-	int m = 0;
-	long a = 1, b = 2, sum = b;
+	int i = 0;
+	long j = 1, k = 2, sum = k;
 
-	while (b + a < 4000000)
+	while (k + j < 4000000)
 	{
-		b += a;
-		if (b % 2 == 0)
-			sum += b;
-		a = b - a;
-		++m;
+		k += j;
+		if (k % 2 == 0)
+			sum += k;
+	       j = k - j;
+		++i;
 	}
 	printf("%ld", sum);
 	return (0);
