@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * main - this function prints the sum of multiples
+ * main - check the code
+ * print_times_table - print times tables of a given number
  * Return: 0
  */
 
