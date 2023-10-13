@@ -11,29 +11,29 @@
 int main(void)
 {
 
-	int i;
+	int b;
 
-	for (i = 1; i <= 100; i++)
+	for (b = 1; b <= 100; b++)
 	{
-		if (i % 3 == 0 && i % 5 != 0)
+		if (b % 3 == 0 && b % 5 != 0)
 		{
 			printf(" Fizz");
 		}
-		else if (i % 5 == 0 && i % 3 != 0)
+		else if (b % 5 == 0 && b % 3 != 0)
 		{
 			printf(" Buzz");
 		}
-		else if (i % 3 == 0 && i % 5 == 0)
+		else if (b % 3 == 0 && b % 5 == 0)
 		{
 			printf("Fizzbuzz");
 		}
-		else if (i == 1)
+		else if (b == 1)
 		{
-			printf(" %d", i);
+			printf(" %d", b);
 		}
 		else
 		{
-			printf(" %d", i);
+			printf(" %d", b);
 		}
 	}
 	printf("\n");
