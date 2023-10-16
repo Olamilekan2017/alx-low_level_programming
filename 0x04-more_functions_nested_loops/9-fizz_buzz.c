@@ -25,11 +25,11 @@ int main(void)
 		}
 		else if (b % 3 == 0 && b % 5 == 0)
 		{
-			printf("Fizzbuzz");
+			printf(" FizzBuzz");
 		}
 		else if (b == 1)
 		{
-			printf(" %d", b);
+			printf("%d", b);
 		}
 		else
 		{
