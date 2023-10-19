@@ -2,7 +2,7 @@
 
 /**
  * cap_string - This function capitalizes all words
- * @b: The string of the function
+ * @b: The string parameter of the function
  * Return: void
  */
 
@@ -19,7 +19,7 @@ char *cap_string(char *b)
 				b[total - 1] == '\n' ||
 				b[total - 1] == ',' ||
 				b[total - 1] == ';' ||
-				b[total - 1] == '_' ||
+				b[total - 1] == '.' ||
 				b[total - 1] == '!' ||
 				b[total - 1] == '?' ||
 				b[total - 1] == '"' ||
