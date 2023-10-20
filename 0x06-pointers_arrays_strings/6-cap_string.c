@@ -26,7 +26,7 @@ char *cap_string(char *b)
 				b[total - 1] == '(' ||
 				b[total - 1] == ')' ||
 				b[total - 1] == '{' ||
-				b[total - 1] == '}' ||
+			b[total - 1] == '}' ||
 				total == 0)
 			b[total] -= 32;
 		total++;
