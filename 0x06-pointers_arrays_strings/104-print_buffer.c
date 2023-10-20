@@ -2,50 +2,50 @@
 
 /**
  * print_buffer - This function prints a buffer
- * @b: The buffer
- * @size: The size of the buffer
+ * @b: The parameter of the buffer
+ * @size: The size of buffer
  * Return: 0
  */
 
 void print_buffer(char *b, int size)
 {
-	int a;
-	int c;
-	int d;
+	int x;
+	int y;
+	int z;
 
-	a = 0;
+	x = 0;
 
 	if (size <= 0)
 	{
 		printf("\n");
 		return;
 	}
-	while (a < size)
+	while (x < size)
 	{
-		c = size - a < 10 ? size - a : 10;
-		printf("%08x: ", a);
-		for (d = 0; d < 10; d++)
+		y = size - x < 10 ? size - x : 10;
+		printf("%08x: ", x);
+		for (z = 0; z < 10; z++)
 		{
-			if (d < c)
-				printf("%02x", *(b + a + d));
+			if (z < y)
+				printf("%02x", *(b + x + z));
 			else
 				printf(" ");
-			if (d % 2)
+			if (z % 2)
 			{
 				printf(" ");
 			}
 		}
-		for (d = 0; d < c; d++)
+		for (z = 0; z < y; z++)
 		{
-			int e = *(b + a + d);
+			int c = *(b + x + z);
 
-			if (e < 32 || e > 132)
+			if (c < 32 || c > 132)
 			{
-				e = '.';
+				c = '.';
 			}
-			printf("%c", e);
+			printf("%c", c);
 		}
 		printf("\n");
-		a += 10;
+		x += 10;
 	}
 }
