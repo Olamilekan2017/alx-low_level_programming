@@ -1,7 +1,7 @@
 #ifndef SEARCH_ALGORITHMS_HEADER_
 #define SEARCH_ALGORITHMS_HEADER_
 
-#include <<stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
 
